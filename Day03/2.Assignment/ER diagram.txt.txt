@@ -1,0 +1,36 @@
+Database tables :
+
+1. Students :
+reg_no - Primary key auto_increment
+name - not null
+email - unique not null
+course_id - foreign key on delete cascade
+(Join Students with Courses, so that the student can see course name and not just the 
+course_id in the GUI)
+mobile_no - unique not null
+profile pic - blob
+
+
+2. Courses:
+course_id - Primary key
+course_name - not null
+description 
+fees -  default = 0(free)
+start_date 
+end_date 
+video_expire_days
+
+
+3. Videos :
+video_id - Primary key
+course_id - foreign key on delete cascade
+title - not null
+description
+youtube_url - unique not null
+added_at - datetime
+
+4. Users :
+email - primary key
+password 
+role - Enum(Admin,Student)
+
