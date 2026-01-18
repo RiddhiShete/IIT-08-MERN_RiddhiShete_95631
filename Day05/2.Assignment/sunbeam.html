@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Sunbeam</title>
+</head>
+<body>
+
+    <h1> 
+        <img src="sunbeam_logo.png"  width="50" height="50">
+        Sunbeam Registration Form
+    </h1>
+    <table border="1" width="400" height="200">
+        <tr>
+            <td rowspan = "10"><iframe src = "https://youtu.be/embed/02q9aAVv1NI"></iframe></td>
+            <td>Name :</td>
+            <td><input type="text" name="name" placeholder="Enter your name"></td>
+        </tr>   
+        <tr>
+            <td>Birth Date :</td>
+            <td><input type="date" name="birthdate"></td>
+        </tr> 
+        <tr> 
+            <td>Email :</td>
+            <td><input type="email" name="email" placeholder="Enter your email"></td>
+        </tr>
+        <tr>
+            <td>Password :</td>
+            <td><input type="password" name="password" placeholder="Enter your password"></td>
+        </tr>
+        <tr>
+            <td>Address :</td>
+            <td><textarea rows="4" cols="50" name="address"> </textarea></td>
+        </tr>
+        <tr>
+            <td>Gender :</td>
+            <td>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </td>
+        </tr>
+        <tr>
+            <td>Upload Photo :</td>
+            <td><input type="file" name="photo"></td>
+        </tr>
+        <tr>
+            <td>Select your Course :</td>
+            <td>
+                <select name="course">
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Skill Set:</td>
+            <td>
+                <input type="checkbox" name="skills" value="Java"> Java
+                <input type="checkbox" name="skills" value="CPP"> CPP
+                <input type="checkbox" name="skills" value="OS"> OS
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right"> 
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+        </tr>
+    </table>
+</body>
+</html>
