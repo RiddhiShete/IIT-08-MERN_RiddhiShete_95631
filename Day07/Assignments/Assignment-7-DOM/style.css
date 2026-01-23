@@ -1,0 +1,13 @@
+#title{
+    text-align: center;
+    margin-top: 20px;
+    color : magenta;
+    background-color: lightgrey;
+}
+#msg{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color : rgb(245, 89, 12);
+
+}
