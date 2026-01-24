@@ -11,8 +11,8 @@ const router = express.Router();
 //1. Get all users
 router.get("/",  (req, res) => {
     const sql = `select * from users `;
-    pool.query(sql, (err, results) => {
-        res.send(result.createResult(err,results))
+    pool.query(sql, (error, data) => {
+        res.send(result.createResult(error,data))
     });
 });
 
@@ -20,8 +20,8 @@ router.get("/",  (req, res) => {
 router.post("/", (req, res) => {
     const {first_name, last_name, email, phone}= req.body;
     const sql = `insert into users (first_name, last_name, email, phone) values (?,?,?,?)`;
-    pool.query(sql, [first_name, last_name, email, phone], (err, results) => {
-        res.send(result.createResult(err,results))
+    pool.query(sql, [first_name, last_name, email, phone], (error, data) => {
+        res.send(result.createResult(error,data))
     });
 });
 
